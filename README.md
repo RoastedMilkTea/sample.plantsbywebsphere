@@ -6,15 +6,6 @@ in an open source development environment.
 
 ## How to run:
 
-
-### Gradle
-
-1. Clone the github repo
-2. Start the Liberty server and open the application in a web browser by running: 
-```
-./gradlew start open
-```
-
 ### Maven
 
 1. Clone the github repo
@@ -29,16 +20,24 @@ To stop the server:
 mvn liberty:stop
 ```
 
+### Gradle
+
+1. Clone the github repo
+2. Start the Liberty server and open the application in a web browser by running: 
+```
+./gradlew start open
+```
+
 ### Build Commands Reference
 
-| Task | Gradle | Maven |
+| Task | Maven | Gradle |
 |------|--------|-------|
-| Clean build | `./gradlew clean build` | `mvn clean package` |
-| Start server | `./gradlew start` | `mvn liberty:start` |
-| Stop server | `./gradlew stop` | `mvn liberty:stop` |
-| Run server (foreground) | `./gradlew libertyRun` | `mvn liberty:run` |
-| Run tests | `./gradlew test` | `mvn test` |
-| Package WAR | `./gradlew war` | `mvn package` |
+| Clean build | `mvn clean package` | `./gradlew clean build` |
+| Start server | `mvn liberty:start` | `./gradlew start` |
+| Stop server | `mvn liberty:stop` | `./gradlew stop` |
+| Run server (foreground) | `mvn liberty:run` | `./gradlew libertyRun` |
+| Run tests | `mvn test` | `./gradlew test` |
+| Package WAR | `mvn package`| `./gradlew war` |
 
 
 ### Collaborators:
