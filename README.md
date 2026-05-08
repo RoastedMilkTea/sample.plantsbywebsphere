@@ -6,11 +6,42 @@ in an open source development environment.
 
 ## How to run:
 
+This project supports both **Gradle** and **Maven** build tools. Choose your preferred option:
+
+### Option 1: Using Gradle (Original)
+
 1. Clone the github repo
 2. Start the Liberty server and open the application in a web browser by running: 
 ```
 ./gradlew start open
 ```
+
+### Option 2: Using Maven (Alternative)
+
+1. Clone the github repo
+2. Build and start the Liberty server:
+```bash
+mvn clean package liberty:start
+```
+3. Open your browser to: http://localhost:9080/PlantsByWebSphere/
+
+To stop the server:
+```bash
+mvn liberty:stop
+```
+
+### Build Commands Reference
+
+| Task | Gradle | Maven |
+|------|--------|-------|
+| Clean build | `./gradlew clean build` | `mvn clean package` |
+| Start server | `./gradlew start` | `mvn liberty:start` |
+| Stop server | `./gradlew stop` | `mvn liberty:stop` |
+| Run server (foreground) | `./gradlew libertyRun` | `mvn liberty:run` |
+| Run tests | `./gradlew test` | `mvn test` |
+| Package WAR | `./gradlew war` | `mvn package` |
+
+**Note:** The Gradle `open` task automatically opens your browser. For Maven, manually navigate to the URL after starting the server.
 
 ### Collaborators:
 - Dalia A. Abo Sheasha
