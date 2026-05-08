@@ -6,7 +6,6 @@ in an open source development environment.
 
 ## How to run:
 
-This project supports both **Gradle** and **Maven** build tools. Choose your preferred option:
 
 ### Option 1: Using Gradle (Original)
 
