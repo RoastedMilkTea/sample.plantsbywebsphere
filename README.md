@@ -15,7 +15,7 @@ in an open source development environment.
 ./gradlew start open
 ```
 
-### Option 2: Using Maven (Alternative)
+### Maven
 
 1. Clone the github repo
 2. Build and start the Liberty server:
