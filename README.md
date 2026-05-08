@@ -7,7 +7,7 @@ in an open source development environment.
 ## How to run:
 
 
-### Option 1: Using Gradle (Original)
+### Gradle
 
 1. Clone the github repo
 2. Start the Liberty server and open the application in a web browser by running: 
