@@ -40,7 +40,6 @@ mvn liberty:stop
 | Run tests | `./gradlew test` | `mvn test` |
 | Package WAR | `./gradlew war` | `mvn package` |
 
-**Note:** The Gradle `open` task automatically opens your browser. For Maven, manually navigate to the URL after starting the server.
 
 ### Collaborators:
 - Dalia A. Abo Sheasha
