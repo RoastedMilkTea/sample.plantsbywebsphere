@@ -28,8 +28,11 @@
         <liberty.var.default.http.port>9080</liberty.var.default.http.port>
         <liberty.var.default.https.port>9443</liberty.var.default.https.port>
         
+        <!-- Open Liberty Runtime  -->
+        <liberty.runtime.version>18.0.0.2</liberty.runtime.version>
+        
         <!-- Plugin Versions -->
-        <version.liberty-maven-plugin>3.10</version.liberty-maven-plugin>
+        <version.liberty-maven-plugin>3.12.0</version.liberty-maven-plugin>
         <version.maven-compiler-plugin>3.11.0</version.maven-compiler-plugin>
         <version.maven-war-plugin>3.4.0</version.maven-war-plugin>
         <version.maven-dependency-plugin>3.6.1</version.maven-dependency-plugin>
@@ -114,6 +117,14 @@
                     
                     <!-- Install application packages -->
                     <installAppPackages>project</installAppPackages>
+                    
+                    <!-- Open Liberty Runtime (matches build.gradle line 36) -->
+                    <runtimeArtifact>
+                        <groupId>io.openliberty</groupId>
+                        <artifactId>openliberty-runtime</artifactId>
+                        <version>${liberty.runtime.version}</version>
+                        <type>zip</type>
+                    </runtimeArtifact>
                     
                     <!-- Bootstrap properties -->
                     <bootstrapProperties>
